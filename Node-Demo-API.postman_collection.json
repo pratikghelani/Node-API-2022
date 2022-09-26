@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "75cc5095-3f29-4491-a1f8-76fc442765c1",
+		"name": "Node-Demo-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Pratik ",
+							"type": "default"
+						},
+						{
+							"key": "last_name",
+							"value": "Ghelani",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "Pratik @gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "phone",
+							"value": "8733015262",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get single User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/users/6331ea8641fc002390732413",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users",
+						"6331ea8641fc002390732413"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/users/6331ea8641fc002390732413",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users",
+						"6331ea8641fc002390732413"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Tushar",
+							"type": "default"
+						},
+						{
+							"key": "last_name",
+							"value": "Ghelani",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "Pratik@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "phone",
+							"value": "8733015262",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/users/6331ebdc41fc002390732414",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users",
+						"6331ebdc41fc002390732414"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
